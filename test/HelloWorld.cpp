@@ -5,11 +5,15 @@
 using namespace std;
 
 void printH(){
-	cout << "Hello " << endl;
+	cout << "Hello!" << endl;
 }
 
 void printW(){
 	cout << "World!" << endl;
+}
+
+void printY(){
+	cout << "Yahoo!" << endl;
 }
 
 int condition(){
@@ -30,13 +34,18 @@ int main(int argc, char *argv[])
 	sigprocmask(SIG_BLOCK, &newmask, &oldmask);
 
 
-	RunTimePlatform runp(20000);
+	RunTimePlatform runp(2000);
 
+	// 3 and 6 : the meaning of multiple
+	// 3 and 5 : the meaning of co-prime
+	// 6 and 5 : the meaning of co-prime
 	Event e1(3, 4, printH, condition);
-	Event e2(3, 4, printW, condition);
+	Event e2(5, 4, printW, condition);
+	Event e3(6, 4, printY, condition);
 
 	runp.registerEvent(e1);
 	runp.registerEvent(e2);
+	runp.registerEvent(e3);
 
 	runp.start();
 

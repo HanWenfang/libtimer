@@ -11,3 +11,6 @@ obj-x += src/Event.o
 
 #test
 obj-HelloWorld += test/HelloWorld.o
+obj-pipeline += test/pipeline.o
+obj-pipeline_data += test/pipeline_data.o
+

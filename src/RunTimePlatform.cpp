@@ -16,7 +16,7 @@ void RunTimePlatform::run(Timer &timer)
 	for(vector<Event>::iterator it=tasks.begin()+breakTaskID; it != tasks.end(); ++it, ++breakTaskID)
 	{
 		if(checkPoint % it->getEvent() == 0){
-			
+			cout << "checkPoint: " << checkPoint << endl;		
 			if(retryCounter > it->getRetryCounter()){
 				retryCounter = 0;
 				continue;
@@ -33,8 +33,6 @@ void RunTimePlatform::run(Timer &timer)
 
 	breakTaskID = 0;
 	++checkPoint;
-	cout << "checkPoint: " << checkPoint << endl;
-	cout << " run,,," << endl;
 	return;
 }
 
