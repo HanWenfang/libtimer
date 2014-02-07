@@ -1,6 +1,5 @@
 
 
-
 #ifndef RUN_TIME_PLATFORM_H
 #define RUN_TIME_PLATFORM_H
 

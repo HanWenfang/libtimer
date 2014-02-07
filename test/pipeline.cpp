@@ -1,4 +1,5 @@
 // ring-pipeling
+// P1[T1]->P2[T2]->P3[T3]
 
 #include <iostream>
 #include "RunTimePlatform.h"

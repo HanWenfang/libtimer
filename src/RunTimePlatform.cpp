@@ -36,8 +36,6 @@ void RunTimePlatform::run(Timer &timer)
 	return;
 }
 
-
-
 int RunTimePlatform::registerEvent(Event &e)
 {
 	tasks.push_back(e);
