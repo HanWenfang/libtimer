@@ -10,6 +10,7 @@ Timer Driven Programming Framework
 
 
 Attention:
+	
 	1. Period is the global resolution, not your applications resolution.
 	
 	2. Your app's resolution must be larger than the Period.
