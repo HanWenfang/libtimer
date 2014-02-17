@@ -1,7 +1,7 @@
-libtimer
+libtimer : Simple is powerful!
 ========
 
-timer drive programming framework
+Timer Drive Programming Framework
 
 1. Event Type
 2. Actor Pattern ==> Message Pass Pattern
@@ -13,4 +13,8 @@ Attention:
 	3. For example:
 		You will have to deal with data every 1 minute, then you can check condition every 20 seconds[Period].
 	4. One task may block others
+
+TO-DO:
+	Add queue between process. [inbox outbox]
+
 
